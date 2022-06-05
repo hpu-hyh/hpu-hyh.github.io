@@ -1,0 +1,51 @@
+.images{
+    width: 90%;
+    column-count: 4; /*描述元素的列数。 */
+    column-gap: 20px;/*用来设置元素列之间的间隔（gutter）大小。*/
+    margin-top: 100px;
+    position: relative;
+}
+.images::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: 500px;
+    background-color: linear-gradient(to bottom, #a1e6ff, #a8ffe2, #a1e6ff);
+    z-index: -9;
+}
+.images div{
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: #000 solid 2px;
+}
+.images img{
+    width: 100%;
+    transition: .3s;
+    opacity: 0.8;
+}
+.images img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    top:0;
+    display: none;
+}
+.image img{
+    height: 80%;
+}
+body .shell-main {
+    margin-bottom: 0;
+}
+body .shell-main-nav{
+    margin-bottom: 0;
+}
