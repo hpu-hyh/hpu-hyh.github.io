@@ -12,7 +12,7 @@
     transform: translate(-50%);
     height: 100%;
     width: 500px;
-    background-color: linear-gradient(to bottom, #a1e6ff, #a8ffe2, #a1e6ff);
+    background-image: linear-gradient(to bottom, #a1e6ff, #a8ffe2, #a1e6ff);
     z-index: -9;
 }
 .images div{
@@ -22,7 +22,7 @@
 }
 .images img{
     width: 100%;
-    transition: .3s;
+    transition: 0.5s;
     opacity: 0.8;
 }
 .images img:hover{
@@ -41,7 +41,7 @@
     display: none;
 }
 .image img{
-    height: 80%;
+    height: 90%;
 }
 body .shell-main {
     margin-bottom: 0;
